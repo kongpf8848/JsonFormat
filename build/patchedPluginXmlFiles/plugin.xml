@@ -1,0 +1,19 @@
+<idea-plugin>
+  <change-notes>Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <version>1.0-SNAPSHOT</version>
+  <id>io.github.kongpf8848.JsonFormat</id>
+  <name>Json Format</name>
+  <vendor email="kongpf8848@gmail.com" url="http://github.com/kongpf8848/JsonFormat">kongpf8848</vendor>
+  <description>&lt;b&gt;Format JSON&lt;/b&gt;, &lt;b&gt;Minify JSON&lt;/b&gt;, &lt;b&gt;Verify JSON&lt;/b&gt; as if you editing a file with .json suffix.</description>
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="JSON Format" secondary="true" icon="/icon.svg" anchor="right" factoryClass="io.github.kongpf8848.jsonformat.JsonFormatToolWindowFactory" />
+  </extensions>
+  <idea-version since-build="213.5744" until-build="213.*" />
+  <actions>
+    <action id="io.github.kongpf8848.jsonformat.actions.MinifyJsonAction" class="io.github.kongpf8848.jsonformat.actions.MinifyJsonAction" text="Minify Json" description="Minify Json in the editor." />
+  </actions>
+</idea-plugin>
