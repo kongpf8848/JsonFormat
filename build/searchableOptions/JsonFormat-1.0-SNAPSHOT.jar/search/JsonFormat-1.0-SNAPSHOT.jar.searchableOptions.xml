@@ -1,8 +1,0 @@
-<options>
-  <configurable id="preferences.keymap" configurable_name="Keymap">
-    <option name="pop" path="ActionManager" hit="Pop" />
-    <option name="action" path="ActionManager" hit="Pop Dialog Action" />
-    <option name="dialog" path="ActionManager" hit="Pop Dialog Action" />
-    <option name="pop" path="ActionManager" hit="Pop Dialog Action" />
-  </configurable>
-</options>
